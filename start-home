@@ -1,0 +1,24 @@
+#!/bin/bash
+set -euo pipefail
+
+native_apps=(
+  "Boostnote"
+  "Todoist"
+  "iTerm"
+)
+
+for native_app in "${native_apps[@]}"; do
+  open -a "$native_app"
+done
+
+websites=(
+  "https://github.com/roederstudios/snout/pulls"
+  "https://circleci.com/gh/roederstudios/workflows/snout"
+  "https://app.bugsnag.com/lkr/ropig-front-end"
+  "https://disqus.com/home/inbox/"
+)
+
+open -a "Google Chrome" --args --profile-directory="Profile 1"
+for website in "${websites[@]}"; do
+  open "$website"
+done
