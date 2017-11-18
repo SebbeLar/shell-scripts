@@ -1,0 +1,4 @@
+#!/bin/bash
+set -euo pipefail
+
+find . -path "*/.git" -maxdepth 2 -print -execdir git status ";"
