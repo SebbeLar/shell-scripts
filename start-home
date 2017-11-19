@@ -4,7 +4,6 @@ set -euo pipefail
 native_apps=(
   "Boostnote"
   "Todoist"
-  "iTerm"
 )
 
 for native_app in "${native_apps[@]}"; do
