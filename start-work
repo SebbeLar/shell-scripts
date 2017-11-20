@@ -5,6 +5,12 @@ native_apps=(
   "Spotify"
   "Todoist"
   "Boostnote"
+  "Slack"
+  "Sequel Pro"
+  "SourceTree"
+  "Calendar"
+  "Harvest"
+  "Mail"
 )
 
 for native_app in "${native_apps[@]}"; do
@@ -12,10 +18,9 @@ for native_app in "${native_apps[@]}"; do
 done
 
 websites=(
-  "https://github.com/roederstudios/snout/pulls"
-  "https://circleci.com/gh/roederstudios/workflows/snout"
-  "https://app.bugsnag.com/lkr/ropig-front-end"
-  "https://disqus.com/home/inbox/"
+  "https://oddhill.atlassian.net/secure/Dashboard.jspa"
+  "https://circleci.com/dashboard"
+  "https://oddhill.atlassian.net/wiki/discover/all-updates"
 )
 
 open -a "Google Chrome" --args --profile-directory="Profile 1"
