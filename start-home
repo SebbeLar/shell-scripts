@@ -11,13 +11,11 @@ for native_app in "${native_apps[@]}"; do
 done
 
 websites=(
-  "https://github.com/roederstudios/snout/pulls"
-  "https://circleci.com/gh/roederstudios/workflows/snout"
-  "https://app.bugsnag.com/lkr/ropig-front-end"
-  "https://disqus.com/home/inbox/"
+  "https://github.com/SebbeLar"
+  "https://twitter.com/"
 )
 
-open -a "Google Chrome" --args --profile-directory="Profile 1"
+open -a "Google Chrome" --args --profile-directory="Sebastian"
 for website in "${websites[@]}"; do
   open "$website"
 done

@@ -23,7 +23,7 @@ websites=(
   "https://oddhill.atlassian.net/wiki/discover/all-updates"
 )
 
-open -a "Google Chrome" --args --profile-directory="Profile 1"
+open -a "Google Chrome" --args --profile-directory="Sebastian"
 for website in "${websites[@]}"; do
   open "$website"
 done
